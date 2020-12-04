@@ -1,0 +1,14 @@
+{
+  "name": "shopify",
+  "version": "1.0.0",
+  "description": "theme creation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "shopify"
+  ],
+  "author": "David Quintero",
+  "license": "ISC"
+}
