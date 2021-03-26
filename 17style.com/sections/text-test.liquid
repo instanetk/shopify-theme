@@ -1,0 +1,34 @@
+<div class="page-width">
+    <h1>{{ section.settings.h1-header }}</h1>
+    <div class="flex justify-center rounded bg-pink-900">{{ section.settings.photo | img_url: 'large' | img_tag: section.settings.photo.alt }}</div>
+</div>
+
+{% schema %}
+  {
+    "name": "Custom heading",
+    "settings": [
+        {
+        "id":"h1-header",
+        "type": "text",
+        "label": "Heading",
+        "default": "Title"
+    },
+    {
+        "id":"photo",
+        "type":"image_picker",
+        "label": "Photo"
+    },
+    {
+        "id":"alt",
+        "type": "text",
+        "label": "alt text"
+    }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
